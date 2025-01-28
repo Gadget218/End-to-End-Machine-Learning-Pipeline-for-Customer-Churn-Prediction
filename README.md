@@ -1,7 +1,13 @@
-# End-to-End-Machine-Learning-Pipeline-for-Customer-Churn-Prediction
+# Customer Churn Prediction
 
-Designed an Airflow pipeline for preprocessing and periodic model retraining using scikit-learn and MLflow. 
+## Instructions
 
-Deployed the model as a REST API with FastAPI for real-time predictions.
-
-Monitored performance with live metrics and implemented data drift detection to ensure accuracy. (Utilized a Docker container to run all the processes)
+1. Clone the repository.
+2. Build the Docker image:
+docker build -t customer_churn_project .
+3. Run the Docker container:
+docker run -p 8000:8000 customer_churn_project
+4. Access FastAPI at `http://localhost:8000`.
+5. Set up Airflow for retraining:
+airflow webserver -p 8080
+6. Access MLflow at `http://localhost:5000`.

@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+mlflow
+fastapi
+uvicorn
+apache-airflow
+great-expectations==0.15.39
+xgboost
+
