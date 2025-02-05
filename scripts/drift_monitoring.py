@@ -19,7 +19,7 @@ def check_data_drift(new_data_path, reference_data_path):
         # Check for drift in mean of the specified column
         drift_detected = not ge_new_data.expect_column_mean_to_be_between(
             column_to_check,
-            ge_reference_data[column_to_check].mean() - 100,  # Example threshold
+            ge_reference_data[column_to_check].mean() - 100,  
             ge_reference_data[column_to_check].mean() + 100
         )["success"]
 
