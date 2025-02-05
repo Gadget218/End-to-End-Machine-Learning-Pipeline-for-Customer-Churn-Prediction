@@ -8,7 +8,7 @@ def check_data_drift(new_data_path, reference_data_path):
         reference_data = pd.read_csv(reference_data_path)
 
         # Verify if the required column exists in the dataset
-        column_to_check = "rev_Mean"  # Replace with an appropriate column name
+        column_to_check = "rev_Mean"  
         if column_to_check not in new_data.columns or column_to_check not in reference_data.columns:
             raise KeyError(f"Column '{column_to_check}' not found in one of the datasets.")
 
