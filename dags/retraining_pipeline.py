@@ -18,7 +18,7 @@ default_args = {
 with DAG(
     'retraining_pipeline',
     default_args=default_args,
-    schedule=timedelta(minutes=5),  # Run every 2 minutes
+    schedule=timedelta(minutes=5),  # Run every 5 minutes
     start_date=datetime(2025, 1, 1),
     catchup=False,
 ) as dag:
